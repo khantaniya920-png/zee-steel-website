@@ -4,12 +4,20 @@ import SCL1 from '../assets/images/SCL1.jpeg'
 import SCL2 from '../assets/images/SCL2.png'
 import SCL3 from '../assets/images/SCL3.jpeg'
 import SCL4 from '../assets/images/SCL4.jpeg'
+import Arc1 from '../assets/images/Arc1.png'
+import Arc2 from '../assets/images/Arc2.png'
+import Arc3 from '../assets/images/Arc3.png'
+import Arc4 from '../assets/images/Arc4.png'
 
 const projectImages = {
   SCL1,
   SCL2,
   SCL3,
   SCL4,
+  Arc1,
+  Arc2,
+  Arc3,
+  Arc4,
 }
 
 export default function ProjectCard({ project }) {
