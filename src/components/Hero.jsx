@@ -8,7 +8,7 @@ export default function Hero({ onOpenContact }) {
   return (
     <section className="relative flex min-h-[86vh] items-end overflow-hidden pt-20">
       <img
-        src="/products/hero-gate.jpg"
+        src="/products/hero-gate.png"
         alt="Luxury custom steel gate"
         className="absolute inset-0 h-full w-full object-cover"
       />

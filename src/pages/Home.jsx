@@ -54,7 +54,7 @@ export default function Home() {
       <TrustStrip />
 
       {/* Featured Work */}
-      <section className="bg-white py-24">
+      <section className="bg-[#F5F3EF] py-24">
         <div className="container-content">
           <motion.div
             {...fadeUp}
