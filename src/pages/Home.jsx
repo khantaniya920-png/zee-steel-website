@@ -22,7 +22,20 @@ const fadeUp = {
 
 export default function Home() {
   const { openContact } = useOutletContext()
-  const featured = projects.slice(0, 8)
+  const featuredImageNames = [
+  'Lux_Gate1',
+  'Lux_Gate2',
+  'Mall_Kids_Zone',
+  'Industrial_Fab',
+  'Tank1',
+  'SCL1',
+  'Arc1',
+  'Arc2',
+]
+
+const featured = featuredImageNames
+  .map((image) => projects.find((project) => project.image === image))
+  .filter(Boolean)
 
   return (
     <>
