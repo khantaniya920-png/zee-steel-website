@@ -54,11 +54,11 @@ export default function Home() {
       <TrustStrip />
 
       {/* Featured Work */}
-      <section className="bg-[#F5F3EF] py-24">
+      <section className="bg-[#F5F3EF] py-14 md:py-16">
         <div className="container-content">
           <motion.div
             {...fadeUp}
-            className="flex flex-wrap items-end justify-between gap-4"
+            className="flex flex-wrap items-end justify-between gap-5"
           >
             <SectionHeading
               title="Selected Work"
@@ -70,7 +70,7 @@ export default function Home() {
             </Button>
           </motion.div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((p, i) => (
               <motion.div
                 key={p.title + i}
@@ -88,12 +88,12 @@ export default function Home() {
       </section>
 
       {/* Why Zee Steel */}
-      <section className="container-content py-24">
+      <section className="container-content py-14 md:py-16">
         <motion.div {...fadeUp}>
           <SectionHeading title="Experience That Shows in Every Detail" />
         </motion.div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {whyZeeSteel.map((item, i) => {
             const Icon = Icons[item.icon] || Icons.Award
 
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* Materials */}
-      <section className="bg-charcoal py-24">
+      <section className="bg-charcoal py-16 md:py-20">
         <div className="container-content">
           <motion.div {...fadeUp}>
             <SectionHeading
@@ -136,7 +136,7 @@ export default function Home() {
             />
           </motion.div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {materials.map((m) => (
               <MaterialCard
                 key={m.name}
@@ -148,12 +148,12 @@ export default function Home() {
       </section>
 
       {/* Industries */}
-      <section className="container-content py-24">
+      <section className="container-content py-16 md:py-20">
         <motion.div {...fadeUp}>
           <SectionHeading title="Built for Homes. Trusted for Large Projects." />
         </motion.div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {industries.map((ind) => (
             <IndustryCard
               key={ind.name}
@@ -164,13 +164,13 @@ export default function Home() {
       </section>
 
       {/* Project Experience */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16 md:py-20">
         <div className="container-content">
           <motion.div {...fadeUp}>
             <SectionHeading title="Selected Project Experience" />
           </motion.div>
 
-          <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <div className="mt-9 grid gap-8 md:grid-cols-2">
             <div>
               <p className="text-sm font-semibold text-steel">
                 Named Projects
@@ -213,10 +213,10 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-ink py-24 text-center">
+      <section className="bg-ink py-16 text-center md:py-20">
         <div className="container-content">
           <motion.div {...fadeUp}>
-            <h2 className="text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
               Have a Steel Project in Mind?
             </h2>
 
@@ -245,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* Contact Preview */}
-      <section className="py-24">
+      <section className="py-16 md:py-20">
         <div className="container-content text-center">
           <p className="text-lg font-semibold text-charcoal">
             {site.name}
